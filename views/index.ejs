@@ -7,20 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="test">댓글 목록</h1>
+    <h1 class="test">문장 모음 / 찰리 안녕~</h1>
         <%for (comment of comments){%>
         <%=comment.content%>
         <form action="/update/<%=comment.id%>" method="post">
-            <input type="text" id="content" name="content" >
-            <input type="submit" value="수정">
+            <input type="text" id="content" name="content" placeholder="수정 content">
+            <input type="submit" value="수정하기">
         </form>
         <form action="/delete/<%=comment.id%>" method="post">
-            <input type="submit" value="삭제">
+            <input type="submit" value="삭제하기">
         </form>
         <%}%>
     <form action="/create" method="post">
-        <input type="text" id="content" name="content" >
-        <input type="submit" value="submit">
+        <input type="text" id="content" name="content" placeholder="추가 content">
+        <input type="submit" value="추가하기">
     </form>
 </body>
 </html>
