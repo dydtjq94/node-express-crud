@@ -1,0 +1,95 @@
+.cooking_detail_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.cooking_detail_img_wrap {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cooking_detail_img_wrap img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.cooking_detail_content_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cooking_detail_content_main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cooking_detail_content_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.cooking_detail_content_time {
+  display: flex;
+}
+.cooking_detail_content_icon {
+}
+.cooking_detail_content_cooking_time {
+}
+.cooking_detail_content_description {
+  font-size: 12px;
+  text-align: justify;
+  line-height: 14px;
+}
+.cooking_detail_content_chef {
+  display: flex;
+  align-items: center;
+}
+.cooking_detail_content_chef_img {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.cooking_detail_content_chef_nickname {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.cooking_detail_sort_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 30px;
+}
+
+.cooking_detail_sort_wrap_upper {
+  margin-bottom: 30px;
+}
+
+.cooking_detail_ingrediant_title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cooking_detail_ingrediant {
+  line-height: 20px;
+  white-space: pre-wrap; /* pre tag내에 word wrap */
+}
+.cooking_detail_sort_wrap_lower {
+}
+.cooking_detail_method_title {
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.cooking_detail_method {
+  line-height: 20px;
+  white-space: pre-wrap; /* pre tag내에 word wrap */
+}
