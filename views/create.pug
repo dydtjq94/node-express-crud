@@ -1,0 +1,38 @@
+extends ./layouts/main
+
+block content
+    .create_wrap
+        #container
+            .inner-container
+                .toggle
+                    p 용섭 요리
+                .toggle
+                    p 진주 요리
+            #toggle-container.inner-container
+                .toggle
+                    p 용섭 요리
+                .toggle
+                    p 진주 요리
+        form.cooking_form(action="/create" method="post")
+            .form_input_wrap
+                .form_input_name
+                input(id="chefType" name="chefType" value="0" style="display: none")  
+            .form_input_wrap
+                .form_input_name 요리사 (마음대로 바꿀 수 있어요)
+                input(id="chefNickname" name="chefNickname" placeholder="요리사" value="진주")
+            .form_input_wrap
+                .form_input_name 요리 이름
+                input(id="cookingName" name="cookingName" placeholder="어떤 요리인가요?")
+            .form_input_wrap
+                .form_input_name 요리 설명 
+                input(id="cookingDes" name="cookingDes" placeholder="요리를 설명해주세요")
+            .form_input_wrap
+                .form_input_name 요리 재료
+                textarea(id="ingrediant" name="ingrediant" rows="5" cols="40" placeholder="어떤 재료가 필요한가요?")
+            .form_input_wrap
+                .form_input_name 만드는 방법
+                textarea(id="method" name="method" rows="5" cols="40" placeholder="만드는 방법을 작성해주세요")
+            //- .form_input_wrap
+            //-     .form_input_name 걸린 시간
+            //-     input(id="cookingTime" name="cookingTime" placeholder="요리 시간")
+            input.form_submit(type="submit" value="요리 추가하기")

@@ -1,0 +1,20 @@
+.footer_btn_wrap {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_btn {
+  width: 90%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3c9e93;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 20px 0;
+  border-radius: 12px;
+}

@@ -1,0 +1,42 @@
+.create_wrap {
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+.cooking_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input_wrap {
+  margin-bottom: 12px;
+}
+
+.form_input_name {
+  color: rgb(44, 44, 44);
+  margin-bottom: 6px;
+}
+
+.form_input_wrap input {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.form_input_wrap textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.form_submit {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3c9e93;
+  color: white;
+  padding: 20px 0;
+  border-radius: 6px;
+  border: none;
+}

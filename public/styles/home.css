@@ -1,0 +1,71 @@
+.home_grid_wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+  margin-bottom: 120px;
+  margin-top: 100px;
+}
+
+.home_cooking_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+}
+
+.home_img_wrap {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.home_img_wrap img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.home_content_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.home_content_main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.home_content_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.home_content_time {
+  display: flex;
+}
+.home_content_icon {
+}
+.home_content_cooking_time {
+}
+.home_content_description {
+  font-size: 12px;
+  text-align: justify;
+  line-height: 14px;
+}
+.home_content_chef {
+  display: flex;
+  align-items: center;
+}
+.home_content_chef_img {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.home_content_chef_nickname {
+  font-size: 14px;
+  margin-top: 2px;
+}

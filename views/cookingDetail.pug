@@ -1,0 +1,57 @@
+extends ./layouts/main
+
+block content
+    .cooking_detail_wrap
+        .cooking_detail_img_wrap
+            if (cooking.image != null)
+                img.cooking_detail_content_img(src=`${cooking.image}`)
+            else 
+                img.cooking_detail_content_img(src=`${cooking.chefType === "0" ? "https://i.ibb.co/wh1HrbC/cookingjinju.png" : "https://i.ibb.co/h1wh5Km/cookingyongsub.png"}`)
+        .cooking_detail_content_wrap 
+            .cooking_detail_content_main 
+                .cooking_detail_content_title #{cooking.cookingName}
+                .cooking_detail_content_description #{cooking.cookingDes}
+            .cooking_detail_content_chef 
+                img.cooking_detail_content_chef_img(src=`${cooking.chefType === "0" ? "https://i.ibb.co/0rk2xmM/Rectangle-1748.png" : "https://i.ibb.co/gVmJq9k/Rectangle-1749.png"}`)
+                .cooking_detail_content_chef_nickname #{cooking.chefNickname}
+        .cooking_detail_sort_wrap 
+            .cooking_detail_sort_wrap_upper
+                .cooking_detail_ingrediant_title [재료]
+                pre.cooking_detail_ingrediant #{cooking.ingrediant}
+            .cooking_detail_sort_wrap_lower
+                .cooking_detail_method_title [만드는 방법]
+                pre.cooking_detail_method #{cooking.method}
+
+
+    //- .home_grid_wrap
+    //-     each cooking in cookings
+    //-         a.home_cooking_wrap(href=`/cooking/${cooking.id}`)
+    //-             //- pre(style="color: blue") #{name.cookingName}
+    //-             .home_img_wrap
+    //-                 if (cooking.image != null)
+    //-                     img.home_content_img(src=`${cooking.image}`)
+    //-                 else 
+    //-                     img.home_content_img(src=`${cooking.chefType === "0" ? "https://i.ibb.co/wh1HrbC/cookingjinju.png" : "https://i.ibb.co/h1wh5Km/cookingyongsub.png"}`)
+    //-             .home_content_wrap 
+    //-                 .home_content_main 
+    //-                     .home_content_title #{cooking.cookingName}
+    //-                     .home_content_description #{cooking.cookingDes}
+    //-                 .home_content_chef 
+    //-                     img.home_content_chef_img(src=`${cooking.chefType === "0" ? "https://i.ibb.co/0rk2xmM/Rectangle-1748.png" : "https://i.ibb.co/gVmJq9k/Rectangle-1749.png"}`)
+    //-                     .home_content_chef_nickname #{cooking.chefNickname}
+                //- pre(style="color: blue") #{name.cookingName}
+        //-     <form action="/update/<%=comment.id%>" method="post">
+        //-         <input type="text" id="content" name="content" placeholder="수정 content">
+        //-         <input type="submit" value="수정하기">
+        //-     </form>
+        //-     <form action="/delete/<%=comment.id%>" method="post">
+        //-         <input type="submit" value="삭제하기">
+        //-     </form>
+
+
+
+//-용섭 img https://i.ibb.co/gVmJq9k/Rectangle-1749.png
+//-용섭 cooking https://i.ibb.co/h1wh5Km/cookingyongsub.png
+
+//-진주 img https://i.ibb.co/0rk2xmM/Rectangle-1748.png
+//-진주 cooking https://i.ibb.co/wh1HrbC/cookingjinju.png
