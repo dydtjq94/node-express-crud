@@ -81,6 +81,7 @@
 
 .cooking_detail_ingrediant {
   line-height: 20px;
+  white-space: pre-wrap; /* pre tag내에 word wrap */
 }
 .cooking_detail_sort_wrap_lower {
 }
@@ -90,4 +91,5 @@
 }
 .cooking_detail_method {
   line-height: 20px;
+  white-space: pre-wrap; /* pre tag내에 word wrap */
 }

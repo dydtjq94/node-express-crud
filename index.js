@@ -52,10 +52,10 @@ const Cookings = sequelize.define(
   },
   {},
 )
-;(async () => {
-  await Cookings.sync()
-  console.log('The table for the User model was just (re)created!')
-})()
+// (async () => {
+//   await Cookings.sync()
+//   console.log('The table for the User model was just (re)created!')
+// })()
 
 // view code
 app.set('view engine', 'pug')
